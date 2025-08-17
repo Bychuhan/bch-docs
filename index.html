@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<div id="app">加载中!!!!!1!!!1111!</div>
+<html lang="en">
+<head>
+    <title>bbbb</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+</head>
+<body style="background-color: #222; color: #fff">
+    <div id="app"></div>
+    <script>
+        window.$docsify = {
+            loadSidebar: true,
+            loadNavbar: true,
+            search: 'auto',
+            search: {
+                maxAge: 0,
+                paths: [],
+                placeholder: '请输入文本',
+                noData: '啥都没有啊我去',
+                namespace: "123",
+                depth: 2
+            },
+            repo: 'Bychuhan/bch-docs',
+            auto2top: true,
+            name: "Bch Docs",
+            autoHeader: false,
+            mergeNavbar: true,
+            themeColor: '#DA70D6',
+            copyCode: {
+                buttonText: '复制到剪贴板',
+                errorText: '复制个屁复制出错了',
+                successText: '复制完了了了了了了了了了',
+            },
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <script src="https://unpkg.com/docsify-copy-code"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/disqus.min.js"></script>
+    <style>
+        .sidebar {
+            border-right: 1px solid rgba(255,255,255,0.07)
+        }
+        .sidebar, .sidebar-toggle {
+            background-color: #222;
+            color: #fff
+        }
+        .search .input-wrap, .search input{
+            background-color: #111;
+            border-radius: 10px;
+            transition: 0.25s;
+            color: #fff
+        }
+        .search input {
+            padding: 0.6em 10px;
+        }
+        .clear-button path {
+            stroke: #000
+        }
+        .clear-button circle {
+            fill: #fff
+        }
+        .sidebar ul li a{
+            color: #fff
+        }
+        .anchor span {
+            color: #fff
+        }
+        .app-nav li ul {
+            background-color: #282828;
+            border: 1px solid #333;
+        }
+        .markdown-section code, .markdown-section pre {
+            background-color: #111;
+            border-radius: 6px;
+        }
+        .markdown-section pre > code {
+            color: #fff
+        }
+        .docsify-copy-code-button {
+            border-radius: 6px;
+        }
+        .markdown-section code {
+            color: #DA70D6
+        }
+        .markdown-section em {
+            color: #fff
+        }
+        .markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section strong {
+            color: #fff
+        }
+        .markdown-section blockquote {
+            color: #fff
+        }
+        .markdown-section p {
+            word-break: break-all;
+        }
+    </style>
+    <script>
+        var app = document.getElementById('app');
+        app.remove();
+    </script>
+</body>
+</html>
