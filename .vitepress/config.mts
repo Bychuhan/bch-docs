@@ -71,6 +71,10 @@ export default defineConfig({
         editLink: {
             pattern: 'https://github.com/Bychuhan/bch-docs/edit/main/:path',
             text: '在 Github 上编辑此页'
+        },
+
+        lastUpdated: {
+            text: '最后更新于: '
         }
     },
 
