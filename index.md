@@ -9,6 +9,6 @@ hero:
   actions:
     - theme: brand
       text: 芝士
-      link: /learning
+      link: /learning/
 ---
 

@@ -13,7 +13,7 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             { text: '家家家', link: '/' },
-            { text: '知识', link: '/learning' }
+            { text: '知识', link: '/learning/' }
         ],
 
         sidebar: [
@@ -43,13 +43,13 @@ export default defineConfig({
                             },
                             modal: {
                                 noResultsText: '什么也没找到 /(ㄒoㄒ)/~~',
-                                resetButtonTitle: '清除查询条件',
+                                resetButtonTitle: '清空搜索',
                                 footer: {
                                     selectText: '选择当前结果',
                                     navigateText: '切换结果',
-                                    closeText: "关闭搜索"
+                                    closeText: '关闭搜索'
                                 },
-                                displayDetails: "显示详情"
+                                displayDetails: '显示详情'
                             }
                         }
                     }
