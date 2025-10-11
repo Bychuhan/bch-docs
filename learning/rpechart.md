@@ -56,5 +56,5 @@ Re:PhiEdit(以下简称RPE)谱面以JSON格式存储。
 - yControl `array` : 音符相对于判定线的Y坐标控制。
 - zOrder `array` : Z轴位置。
 
-## 123 `int`
+## 2DO `int`
 后面我不想写了。
