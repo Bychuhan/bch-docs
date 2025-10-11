@@ -74,7 +74,7 @@ export default defineConfig({
         },
 
         lastUpdated: {
-            text: '最后更新于: '
+            text: '最后更新于'
         }
     },
 
