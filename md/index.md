@@ -9,5 +9,8 @@ hero:
     - theme: brand
       text: 介绍
       link: /intro
+    - theme: alt
+      text: 知识
+      link: /learning
 ---
 
