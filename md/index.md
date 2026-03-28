@@ -5,5 +5,9 @@ layout: home
 hero:
   name: "bch docs"
   tagline: 一个个个文档
+  actions:
+    - theme: brand
+      text: 介绍
+      link: /intro
 ---
 
