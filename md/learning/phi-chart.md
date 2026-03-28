@@ -24,7 +24,7 @@ Phigros 官方谱面使用 Json 格式存储。
 - **offset** `float` : 谱面的偏移。  
     目前所有谱面中， `offset` 的值均为非负数。  
     当 `offset` 为 $0.0$ 时，谱面与音乐同时开始播放。  
-    当 `offset` 为正数时，谱面在音乐开始后 `offset` 秒开始。
+    当 `offset` 为正数时，谱面在音乐开始播放后 `offset` 秒开始播放。
 - **judgeLineList** `array` : 判定线数组。  
     目前所有谱面中， `judgeLineList` 的长度至少为 $1$ 。  
     大多数谱面中， `judgeLineList` 的长度为 $24$ 。  
