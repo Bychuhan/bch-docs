@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress"
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: "md",
-  
+
   title: "bch docs",
   description: "idk",
   lang: "zh-Hans",
@@ -29,6 +29,12 @@ export default defineConfig({
         {
           text: "知识",
           link: "/learning/"
+        },
+        {
+          text: "Phigros 谱面相关",
+          items: [
+            { text: "官谱格式", link: "/learning/phi-chart" }
+          ]
         }
       ]
     },
