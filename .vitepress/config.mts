@@ -16,6 +16,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "主页", link: "/" },
+      { text: "介绍", link: "/intro" },
+      { text: "知识", link: "/learning/", activeMatch: "/learning/" },
     ],
 
     sidebar: {
