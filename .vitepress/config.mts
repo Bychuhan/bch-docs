@@ -22,7 +22,13 @@ export default defineConfig({
       "/intro": [
         {
           text: "介绍",
-          link: '/intro'
+          link: "/intro"
+        }
+      ],
+      "/learning/": [
+        {
+          text: "知识",
+          link: "/learning/"
         }
       ]
     },
