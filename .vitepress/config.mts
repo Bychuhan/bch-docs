@@ -35,7 +35,7 @@ export default defineConfig({
         {
           text: "Phigros 谱面相关",
           items: [
-            { text: "官谱格式", link: "/learning/phi-chart" }
+            { text: "Phigros 官谱格式", link: "/learning/phi-chart" }
           ]
         }
       ]
