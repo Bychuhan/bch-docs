@@ -1,7 +1,6 @@
 # Phigros 官方谱面格式
 
-Phigros 官方谱面使用 Json 格式存储。  
-所有 Phigros 本体谱面均使用此格式。
+Phigros 官方谱面均采用 JSON 格式存储。
 
 ::: warning
 本文档对谱面的描述基于 `v3.18.4` 版本。  
