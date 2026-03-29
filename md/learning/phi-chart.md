@@ -14,7 +14,7 @@ Phigros 官方谱面均采用 JSON 格式存储。
 - $P = 0.0625 \cdot W$
 - $V = 0.6 \cdot H$
 - $T = \frac{1.875}{\text{bpm}} \text{s}$  
-    此处 $\text{bpm}$ 为对应判定线的 bpm 值。
+    此处 $\text{bpm}$ 为对应判定线的 `bpm` 值。
 
 ## 根
 - **formatVersion** `int` : 该谱面格式的版本号。  
@@ -34,8 +34,8 @@ Phigros 官方谱面均采用 JSON 格式存储。
 对于判定线数组中的单个元素：
 
 - **bpm** `float` : 该判定线的 `bpm` 值。  
-    `bpm` 为 `beatPerMinute` 的缩写，表示每分钟的节拍数。  
-    在 Phigros 官方谱面中，不存在全局 `bpm` 数组。每条判定线均使用单独的 `bpm` 值。
+    `bpm` 为 beatPerMinute 的缩写，表示每分钟的节拍数。  
+    在 Phigros 官方谱面中，不存在全局 bpm 数组。每条判定线均使用单独的 bpm 值。
 
 - **notesAbove** `array` : 从该判定线**上方**下落的音符数组。  
   **notesBelow** `array` : 从该判定线**下方**下落的音符数组。  
