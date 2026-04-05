@@ -68,6 +68,15 @@
   --vp-c-danger-2: var(--vp-c-red-2);
   --vp-c-danger-3: var(--vp-c-red-3);
   --vp-c-danger-soft: var(--vp-c-red-soft);
+
+  --vp-c-gutter: #00000000;
+  --vp-nav-bg-color: rgba(255, 255, 255, 0.3);
+  --vp-search-bg-color: rgba(246, 246, 247, 0.4);
+}
+
+.dark {
+  --vp-nav-bg-color: rgba(27, 27, 31, 0.3);
+  --vp-search-bg-color: rgba(22, 22, 24, 0.4);
 }
 
 /**
@@ -129,3 +138,12 @@
   --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
 }
 
+.content-body {
+  background-color: var(--vp-nav-bg-color);
+  backdrop-filter: blur(15px);
+}
+
+.VPNavBarSearchButton[data-v-269c8971] {
+  background-color: var(--vp-search-bg-color);
+  border: 1px solid var(--vp-c-bg-alt);
+}
