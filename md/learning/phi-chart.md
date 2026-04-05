@@ -143,8 +143,8 @@ $$floorPosition - currentY.$$
 同时，类型非 hold 的音符相对于判定线的 Y 位置还受 `speed` 与下落的方向影响。  
 类型为 hold 的音符相对于判定线的 Y 位置仅受下落的方向影响。
 
-对于类型为 hold 的音符，它的初始长度为 `speed` $\cdot V$ .  
-在 `time` 至 `time` $+$ `holdTime` 期间，其长度由初始长度线性插值至 $0$ .
+对于类型为 hold 的音符，它的初始长度为 $speed \cdot V$ .  
+在 `time` 至 $time + holdTime$ 期间，其长度由初始长度线性插值至 $0$ .
 :::
 
 :::tip 音符的渲染优化
