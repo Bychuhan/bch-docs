@@ -1,3 +1,4 @@
+<ClientOnly>
 <script>
 
 const pages = [
@@ -12,3 +13,4 @@ const randomPage = pages[randomIndex];
 window.location.href = randomPage;
 
 </script>
+</ClientOnly>
