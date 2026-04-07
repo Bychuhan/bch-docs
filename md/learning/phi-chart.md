@@ -1,4 +1,4 @@
-# Phigros 官方谱面格式
+# Phigros 官方谱面格式 {#phi-chart}
 
 Phigros 官方谱面均采用 JSON 格式存储。
 
@@ -7,7 +7,7 @@ Phigros 官方谱面均采用 JSON 格式存储。
 本文档中所有描述均为非官方定义。
 :::
 
-## 定义
+## 定义 {#def}
 在开始之前，让我们定义：
 - $W =$ 画面宽度 $\text{px}$ .
 - $H =$ 画面高度 $\text{px}$ .
@@ -16,7 +16,7 @@ Phigros 官方谱面均采用 JSON 格式存储。
 - $T = \frac{1.875}{\text{bpm}} \text{s}$ .  
     此处 $\text{bpm}$ 为对应判定线的 `bpm` 值.
 
-## 根
+## 根 {#root}
 - **formatVersion** `int` : 该谱面格式的版本号。  
     目前所有谱面中， `formatVersion` 的值仅可能为 $1$ 或 $3$ .  
     若无特殊说明，本文档所描述的行为均为 `formatVersion` 为 $3$ 时的行为.
@@ -37,7 +37,7 @@ Phigros 官方谱面均采用 JSON 格式存储。
     在 Starduster.Quree.0 的初版 EZ 谱面中， `numOfNotes` 字段的值填写错误，这导致玩家可以获得超出 $1000000$ 的分数.
 :::
 
-## 判定线数组
+## 判定线数组 {#lines}
 对于判定线数组中的单个元素：
 
 - **bpm** `float` : 该判定线的 bpm 值。  
@@ -71,7 +71,7 @@ Phigros 官方谱面均采用 JSON 格式存储。
 2026 年愚人节的特殊谱面 OblivionPHIN.Daily天利vsEndCat终猫ftAiSSw夜輪.0 通过将判定线移到远处，露出端点，实现了断线效果。
 :::
 
-## 事件数组
+## 事件数组 {#events}
 事件数组按事件开始时间升序排列，且事件间首尾相接，无重叠、无间隔。
 
 对于事件数组中的单个元素：
@@ -140,7 +140,7 @@ $$ new\_event.start2 = \frac{event.start \bmod 1000}{520} ,$$
 $$ new\_event.end2 = \frac{event.end \bmod 1000}{520} .$$
 :::
 
-## 音符数组
+## 音符数组 {#notes}
 对于音符数组中的单个元素：
 
 - **type** `int` : 该音符的类型。  
