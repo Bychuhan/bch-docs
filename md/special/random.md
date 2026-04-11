@@ -1,16 +1,17 @@
-<ClientOnly>
-<script>
+<script setup>
+import { onMounted } from 'vue'
 
-const pages = [
-    './？.py',
-    './wtfbro',
-    './zw'
-];
+onMounted(() => {
+    const pages = [
+        './？.py',
+        './wtfbro',
+        './zw'
+    ];
 
-const randomIndex = Math.floor(Math.random() * pages.length);
-const randomPage = pages[randomIndex];
+    const randomIndex = Math.floor(Math.random() * pages.length);
+    const randomPage = pages[randomIndex];
 
-window.location.href = randomPage;
+    window.location.href = randomPage;
+})
 
 </script>
-</ClientOnly>
