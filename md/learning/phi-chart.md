@@ -188,7 +188,7 @@ $$floorPosition - currentY.$$
 $$图 1$$
 
 如图 $1$ ，两个左右并排的 hold 音符存在重叠区域.  
-正常情况下，应为其中一个 hold 音符完全遮挡另一个 hold 音符，但此处出现异常：左侧 hold 身遮挡了右侧 hold 身，而右侧 hold 头却遮挡了左侧 hold 头。
+正常情况下，其中一个 hold 音符应完全遮挡另一个 hold 音符，但此处出现异常：左侧 hold 身遮挡了右侧 hold 身，而右侧 hold 头却遮挡了左侧 hold 头。
 
 
 ![图 2](/phi-chart-2.png)
