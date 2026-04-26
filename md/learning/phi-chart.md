@@ -27,14 +27,14 @@ Phigros 官方谱面均采用 JSON 格式存储。
 - **judgeLineList** `array` : 判定线数组。  
     目前所有谱面中， `judgeLineList` 的长度至少为 $1$ .  
     大多数谱面中， `judgeLineList` 的长度为 $24$ .  
-    在 DistortedFate.Sakuzyo.0 的 AT 谱面中， `judgeLineList` 的长度为 $46$ ，在所有谱面中最大.  
+    在 Distorted Fate 的 AT 谱面中， `judgeLineList` 的长度为 $46$ ，在所有谱面中最大.  
     详见[**判定线数组**](#判定线数组)。
 
 :::tip 被删除的字段
 在 `v2.5.0` 前，存在以下字段：
 - **numOfNotes** `int` : 谱面的音符总数。  
     该字段曾参与分数与准确度的计算，删除后音符总数根据各个判定线音符数组的长度计算。  
-    在 Starduster.Quree.0 的初版 EZ 谱面中， `numOfNotes` 字段的值填写错误，这导致玩家可以获得超出 $1000000$ 的分数.
+    在 Starduster 的初版 EZ 谱面中， `numOfNotes` 字段的值填写错误，这导致玩家可以获得超出 $1000000$ 的分数.
 :::
 
 ## 判定线数组 {#lines}
@@ -68,7 +68,7 @@ Phigros 官方谱面均采用 JSON 格式存储。
 
 ::: tip 判定线的长宽
 判定线的长度为 $5.76 \cdot H$ ，宽度为 $0.0075 \cdot H$ .  
-2026 年愚人节的特殊谱面 OblivionPHIN.Daily天利vsEndCat终猫ftAiSSw夜輪.0 通过将判定线移到远处，露出端点，实现了断线效果。
+2026 年愚人节曲目 Oblivion: PHIN 的特殊谱面通过将判定线移到远处，露出端点，实现了断线效果。
 :::
 
 ## 事件数组 {#events}
