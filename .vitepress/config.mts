@@ -33,9 +33,10 @@ export default defineConfig({
           link: "/learning/"
         },
         {
-          text: "Phigros 谱面相关",
+          text: "谱面相关",
           items: [
-            { text: "Phigros 官谱格式", link: "/learning/phi-chart" }
+            { text: "Phigros 官谱格式", link: "/learning/phi-chart" },
+            { text: "Rizline 官谱格式", link: "/learning/riz-chart" }
           ]
         }
       ]
@@ -46,7 +47,7 @@ export default defineConfig({
     ],
 
     outline: {
-      level: [2, 6],
+      level: [2, 3],
       label: "页面导航"
     },
 
