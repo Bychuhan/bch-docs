@@ -14,7 +14,7 @@ Rizline 官方谱面均采用 JSON 格式存储。
 - $T = \frac{60}{\text{BPM}} \text{s}$ ，时间单位 .
 - $Y =$ 线圈的垂直位置 .
 - $speed =$ 谱面流速 .
-- $S = (\frac{215}{32} + speed ) \times \frac{10}{129}$
+- $S = (\frac{215}{32} + speed ) \times \frac{10}{129}$ .
 
 ## 根 {#root}
 - **fileVersion** `int` : 该谱面格式的版本号，作用不明。  
@@ -28,7 +28,7 @@ Rizline 官方谱面均采用 JSON 格式存储。
 - **bpmShifts** [`list[BpmShift]`](#bpm-shift) : 谱面 BPM 变化。  
     该字段的值为空列表时， BPM 恒定为谱面基本 BPM 。
 - **offset** `float` : 偏移，作用不明。  
-    部分谱面中，该字段不存在，其余谱面中该字段的值均为 `0.0` 。
+    部分谱面中，该字段不存在，其余谱面中该字段的值均为 $0.0$ .
 - **lines** [`list[Line]`](#line) : 谱面线列表。
 - **canvasMoves** [`list[Canvas]`](#canvas) : 谱面画布列表。
 - **cameraMove** [`list[Camera]`](#camera) : 谱面摄像机事件组。
@@ -131,20 +131,20 @@ Rizline 官方谱面均采用 JSON 格式存储。
 
 ### 缩放关键点 {#scale-key-point}
 - **time** `float` : 关键点起始时间，单位为 $T$ .
-- **value** `float` : 关键点起始时的缩放倍率 .
+- **value** `float` : 关键点起始时的缩放倍率。
 - **easeType** [`EaseType`](#ease-type) : 该关键点至下一个关键点区间的过渡缓动类型，对于最后一个关键点，该字段无作用。
 - **floorPosition** `float` : 该字段无作用。
 
 ### 流速关键点 {#speed-key-point}
 - **time** `float` : 关键点起始时间，单位为 $T$ .
-- **value** `float` : 该关键点至下一个关键点区间的流速，单位为 $W$ ，对于最后一个关键点，关键点起始后流速恒定为该字段的值。
+- **value** `float` : 该关键点至下一个关键点区间的流速，单位为 $W$ ，对于最后一个关键点，关键点起始后流速恒定为该字段的值 .
 - **easeType** [`EaseType`](#ease-type) : 该字段无作用。
-- **floorPosition** `float` : 关键点起始时之前流速的累加值。
+- **floorPosition** `float` : 关键点起始时流速的累加值。
 
 ::: tip 关键点组的特殊情况
 一组关键点中可能出现以下特殊情况：
 - 关键点组未按起始时间升序排列，需进行排序处理。
-- 第一个关键点的起始时间大于 $0$ ，在此之前的值为第一个关键点进度为 $0$ 时的计算值。
+- 第一个关键点的起始时间大于 $0$ ，在此之前的值为第一个关键点进度为 $0$ 时的计算值 .
 :::
 
 ## 缓动类型 {#ease-type}
