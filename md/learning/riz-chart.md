@@ -9,18 +9,12 @@ Rizline 官方谱面均采用 JSON 格式存储。
 
 ## 定义 {#def}
 在开始之前，让我们定义：
-###### {#def-w}
 - $W =$ 画面宽度 $\text{px}$ .
-###### {#def-h}
 - $H =$ 画面高度 $\text{px}$ .
-###### {#def-t}
 - $T = \frac{60}{\text{BPM}} \text{s}$ ，时间单位 .
-###### {#def-y}
 - $Y =$ 线圈的垂直位置 .
-###### {#def-speed}
 - $speed =$ 谱面流速 .
-###### {#def-s}
-- $S = (\frac{215}{32} +$ [$speed$](#def-speed) $) \times \frac{10}{129}$
+- $S = (\frac{215}{32} + speed ) \times \frac{10}{129}$
 
 ## 根 {#root}
 - **fileVersion** `int` : 该谱面格式的版本号，作用不明。  
@@ -55,8 +49,8 @@ Rizline 官方谱面均采用 JSON 格式存储。
 ## Riztime {#challenge-time}
 - **checkPoint** `float` : 作用不明。  
     部分谱面中，该字段的值与 `start` 的值相近或相等，其余谱面中该字段的值均为 $0$ .
-- **start** `float` : 起始时间，单位为 [$T$](#def-t) .
-- **end** `float` : 结束时间，单位为 [$T$](#def-t) .
+- **start** `float` : 起始时间，单位为 $T$ .
+- **end** `float` : 结束时间，单位为 $T$ .
 - **transTime** `float` : 过渡时间，单位为秒。  
     Riztime 起始与结束时动画的时长恒定，该字段仅控制 Riztime 结束后动画延迟出现的时间。
 
@@ -85,12 +79,12 @@ Rizline 官方谱面均采用 JSON 格式存储。
 - **lineColor** [`list[ColorKeyPoint]`](#color-key-point) : 线整体颜色变化关键点列表
 
 ## 节点 {#line-point}
-- **time** `float` : 节点流动到 [$Y$](#def-y) 时的时间，单位为 [$T$](def-t) .
-- **xPosition** `float` : 节点的水平位置，单位为 [$W$](#def-w) .
+- **time** `float` : 节点流动到 $Y$ 时的时间，单位为 $T$ .
+- **xPosition** `float` : 节点的水平位置，单位为 $W$ .
 - **color** [`Color`](#color) : 节点的基本颜色。
 - **easeType** [`EaseType`](#ease-type) : 该节点至下一个节点区间，线的水平位置的缓动类型。
 - **canvasIndex** `int` : 该节点所在[画布](#canvas)的索引。
-- **floorPosition** `float` : 谱面开始播放时，节点相对于 [$Y$](def-y) 的垂直位置，单位为 [$S$](def-s) .
+- **floorPosition** `float` : 谱面开始播放时，节点相对于 $Y$ 的垂直位置，单位为 $S$ .
 
 :::tip 节点的实际颜色
 我们定义 $c_1$ 为节点的基本颜色， $c_2$ 为当前时刻[线](#line)的 `lineColor` 的计算值 .  
@@ -100,8 +94,8 @@ Rizline 官方谱面均采用 JSON 格式存储。
 
 ## Note {#note}
 - **type** [`NoteType`](#note-type) : Note 的类型。
-- **time** `float` : Note 判定的时间，单位为 [$T$](def-t) .
-- **floorPosition** `float` : 谱面开始播放时， Note 相对于 [$Y$](def-y) 的垂直位置，单位为 [$S$](def-s) .
+- **time** `float` : Note 判定的时间，单位为 $T$ .
+- **floorPosition** `float` : 谱面开始播放时， Note 相对于 $Y$ 的垂直位置，单位为 $S$ .
 - **otherInformations** `list[float, 3] | list[Never]` : Hold 信息。  
     一般情况下，对于类型为 `NoteType.HOLD` 的 Note ，该字段的值有 $3$ 个元素，分别为：
     - Note 长按结束时间。
@@ -127,23 +121,23 @@ Rizline 官方谱面均采用 JSON 格式存储。
 ### 颜色关键点 {#color-key-point}
 - **startColor** [`Color`](#color) : 关键点起始时的颜色。
 - **endColor** [`Color`](#color) : 下一个关键点起始时的颜色，对于最后一个关键点，该字段无作用。
-- **time** `float` : 关键点起始时间，单位为 [$T$](#def-t) .
+- **time** `float` : 关键点起始时间，单位为 $T$ .
 
 ### 水平位置关键点 {#x-pos-key-point}
-- **time** `float` : 关键点起始时间，单位为 [$T$](#def-t) .
-- **value** `float` : 关键点起始时的水平位置，单位为 [$W$](#def-w) .
+- **time** `float` : 关键点起始时间，单位为 $T$ .
+- **value** `float` : 关键点起始时的水平位置，单位为 $W$ .
 - **easeType** [`EaseType`](#ease-type) : 该关键点至下一个关键点区间的过渡缓动类型，对于最后一个关键点，该字段无作用。
 - **floorPosition** `float` : 该字段无作用。
 
 ### 缩放关键点 {#scale-key-point}
-- **time** `float` : 关键点起始时间，单位为 [$T$](#def-t) .
+- **time** `float` : 关键点起始时间，单位为 $T$ .
 - **value** `float` : 关键点起始时的缩放倍率 .
 - **easeType** [`EaseType`](#ease-type) : 该关键点至下一个关键点区间的过渡缓动类型，对于最后一个关键点，该字段无作用。
 - **floorPosition** `float` : 该字段无作用。
 
 ### 流速关键点 {#speed-key-point}
-- **time** `float` : 关键点起始时间，单位为 [$T$](#def-t) .
-- **value** `float` : 该关键点至下一个关键点区间的流速，单位为 [$W$](#def-w) ，对于最后一个关键点，关键点起始后流速恒定为该字段的值。
+- **time** `float` : 关键点起始时间，单位为 $T$ .
+- **value** `float` : 该关键点至下一个关键点区间的流速，单位为 $W$ ，对于最后一个关键点，关键点起始后流速恒定为该字段的值。
 - **easeType** [`EaseType`](#ease-type) : 该字段无作用。
 - **floorPosition** `float` : 关键点起始时之前流速的累加值。
 
