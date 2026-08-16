@@ -137,7 +137,7 @@ Rizline 官方谱面均采用 JSON 格式存储。
 
 ### 流速关键点 {#speed-key-point}
 - **time** `float` : 关键点起始时间，单位为 $T$ .
-- **value** `float` : 该关键点至下一个关键点区间的流速，单位为 $W$ ，对于最后一个关键点，关键点起始后流速恒定为该字段的值 .
+- **value** `float` : 该关键点至下一个关键点区间的流速，单位为 $S$ ，对于最后一个关键点，关键点起始后流速恒定为该字段的值 .
 - **easeType** [`EaseType`](#ease-type) : 该字段无作用。
 - **floorPosition** `float` : 关键点起始时流速的累加值。
 
