@@ -162,7 +162,7 @@ Rizline 官方谱面均采用 JSON 格式存储。
 - IO_QUART = 9
 - IN_QUINT = 10
 - OUT_QUINT = 11
-- IO_QUINt = 12
+- IO_QUINT = 12
 - ZERO = 13
 - ONE = 14
 - IN_CIRC = 15
