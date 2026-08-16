@@ -114,8 +114,8 @@ Rizline 官方谱面均采用 JSON 格式存储。
 - HOLD = 2
 
 ## 摄像机 {#camera}
-- **scaleKeyPoints** [`scale-key-point`](#scale-key-point) : 摄像机缩放关键点。
-- **xPositionKeyPoints** [`x-pos-key-point`](#x-pos-key-point) : 摄像机水平位置关键点。
+- **scaleKeyPoints** [`ScaleKeyPoint`](#scale-key-point) : 摄像机缩放关键点。
+- **xPositionKeyPoints** [`XPosKeyPoint`](#x-pos-key-point) : 摄像机水平位置关键点。
 
 ## 关键点 {#key-point}
 ### 颜色关键点 {#color-key-point}
