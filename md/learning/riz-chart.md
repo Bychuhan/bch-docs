@@ -76,7 +76,7 @@ Rizline 官方谱面均采用 JSON 格式存储。
 - **linePoints** [`list[LinePoint]`](#line-point) : 线的节点列表。
 - **notes** [`list[Note]`](#note) : 线的 Note 列表。
 - **judgeRingColor** [`list[ColorKeyPoint]`](#color-key-point) : 线圈颜色变化关键点列表。
-- **lineColor** [`list[ColorKeyPoint]`](#color-key-point) : 线整体颜色变化关键点列表
+- **lineColor** [`list[ColorKeyPoint]`](#color-key-point) : 线整体颜色变化关键点列表。
 
 ## 节点 {#line-point}
 - **time** `float` : 节点流动到 $Y$ 时的时间，单位为 $T$ .
