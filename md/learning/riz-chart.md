@@ -19,7 +19,7 @@ Rizline 官方谱面均采用 JSON 格式存储。
 ## 根 {#root}
 - **fileVersion** `int` : 该谱面格式的版本号，作用不明。  
     目前仅 Tempest 的 IN 谱面中，该字段的值为 $1$ ，其余谱面中该字段的值均为 $0$ .  
-- **songsName** `string` : 歌曲名称。  
+- **songsName** `str` : 歌曲名称。  
     该字段的值在部分谱面中为正确的曲名，但在绝大多数谱面中，该字段不存在或值为空。
 - **themes** [`list[ThemeColor]`](#theme-color) : 谱面主题颜色列表。  
     列表中第一项为常态主题，第二项起为 Riztime 主题。
@@ -69,8 +69,8 @@ Rizline 官方谱面均采用 JSON 格式存储。
 
 ## 画布 {#canvas}
 - **index** `int` : 该画布的索引。
-- **xPositionKeyPoints** [`x-pos-key-point`](#x-pos-key-point) : 画布水平位置关键点。
-- **speedKeyPoints** [`speed-key-point`](#speed-key-point) : 画布流速关键点。
+- **xPositionKeyPoints** [`XPosKeyPoint`](#x-pos-key-point) : 画布水平位置关键点。
+- **speedKeyPoints** [`SpeedKeyPoint`](#speed-key-point) : 画布流速关键点。
 
 ## 线 {#line}
 - **linePoints** [`list[LinePoint]`](#line-point) : 线的节点列表。
