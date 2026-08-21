@@ -52,7 +52,7 @@ Rizline 官方谱面均采用 JSON 格式存储。
 - **start** `float` : 起始时间，单位为 $T$ .
 - **end** `float` : 结束时间，单位为 $T$ .
 - **transTime** `float` : 过渡时间，单位为秒。  
-    Riztime 的起始动画时长为该字段值的二十分之一，结束动画的时长固定。该字段同时也控制 Riztime 结束后动画延迟出现的时间。 (需要验证)
+    9:16 比例下，Riztime 起始动画与结束动画的时长约为该字段值的十五分之一。该字段同时也控制 Riztime 结束后结束动画延迟出现的时间。 (需要验证)
 
 ::: tip Riztime 主题
 一个 Riztime 的主题索引为这个 Riztime 在 `challengeTimes` 中的索引 $+ 1$ .
