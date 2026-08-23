@@ -52,8 +52,8 @@ Rizline 官方谱面均采用 JSON 格式存储。
 - **start** `float` : 起始时间，单位为 $T$ .
 - **end** `float` : 结束时间，单位为 $T$ .
 - **transTime** `float` : 过渡时间，单位为秒。  
-    Riztime 开始后，圆形从底部出现，在 `transTime` 秒内大小由 $0$ 线性变为最大。  
-    Riztime 结束后，圆形从顶部消失，在 `transTime` 秒内大小由最大线性变为 $0$ 。  
+    Riztime 开始后，圆形从底部出现，在 `transTime` 秒内大小由 $0$ 线性变为最大 .  
+    Riztime 结束后，圆形从顶部消失，在 `transTime` 秒内大小由最大线性变为 $0$ .  
     圆形的最大大小约为 $16 \times H$ .
 <!-- 实测数据，别把 Ai 当爹了.. -->
 
