@@ -55,7 +55,6 @@ Rizline 官方谱面均采用 JSON 格式存储。
     Riztime 开始后，圆形从底部出现，在 `transTime` 秒内大小由 $0$ 线性变为最大 .  
     Riztime 结束后，圆形从顶部消失，在 `transTime` 秒内大小由最大线性变为 $0$ .  
     圆形的最大大小约为 $16 \times H$ .
-<!-- 实测数据，别把 Ai 当爹了.. -->
 
 ::: tip Riztime 主题
 一个 Riztime 的主题索引为这个 Riztime 在 `challengeTimes` 中的索引 $+ 1$ .
@@ -92,7 +91,7 @@ Rizline 官方谱面均采用 JSON 格式存储。
 :::tip 节点的实际颜色
 我们定义 $c_1$ 为节点的基本颜色， $c_2$ 为当前时刻[线](#line)的 `lineColor` 的计算值 .  
 节点的实际颜色为： $(c_1.rgb + c_2.rgb \times c_2.a, c_1.a)$ .  
-若[线](#line)的 `lineColor` 字段的值为一个空列表， $c_2.a$ 判定为 $0$ .
+若[线](#line)的 `lineColor` 的值为一个空列表， $c_2.a$ 判定为 $0$ .
 :::
 
 ## Note {#note}
