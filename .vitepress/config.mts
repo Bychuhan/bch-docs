@@ -35,7 +35,12 @@ export default defineConfig({
         {
           text: '谱面相关',
           items: [
-            { text: 'Phigros 官谱格式', link: '/learning/phi-chart' },
+            {
+              text: 'Phigros 官谱格式', link: '/learning/phi-chart',
+              items: [
+                { text: 'blockAreaList', link: '/learning/phi-block' }
+              ]
+            },
             { text: 'Rizline 官谱格式', link: '/learning/riz-chart' }
           ]
         }
