@@ -13,7 +13,7 @@
 这里我们定义*噪域*的**基本位置**为**这两个坐标的平均值**，**宽高**为**这两个坐标差的绝对值**。
 
 ## 时间
-*噪域*有四个时间相关得字段： `appearTime` `enableTime` `disableTime` `disappearTime` 。  
+*噪域*有四个时间相关字段： `appearTime` `enableTime` `disableTime` `disappearTime` 。  
 这四个字段分别控制*噪域*的**显现时间**、**启用时间**、**禁用时间**、**消失时间**，单位均为秒。
 
 ## 反转
