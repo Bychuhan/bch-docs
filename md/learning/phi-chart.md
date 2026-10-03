@@ -27,8 +27,11 @@ Phigros 官方谱面均采用 JSON 格式存储。
 - **judgeLineList** `array` : 判定线数组。  
     目前所有谱面中， `judgeLineList` 的长度至少为 $1$ .  
     大多数谱面中， `judgeLineList` 的长度为 $24$ .  
-    在 Distorted Fate 的 AT 谱面中， `judgeLineList` 的长度为 $46$ ，在所有谱面中最大.  
+    在 ハテ 的 AT 谱面中， `judgeLineList` 的长度为 $66$ ，在所有谱面中最大.  
     详见[**判定线数组**](#判定线数组)。
+- **blockAreaList** `array` : *噪域*数组，可选。  
+    在 ハテ 的 AT 谱面中， `blockAreaList` 的长度为 $14355$ ，在所有谱面中最大.  
+    详见[***噪域***](phi-block.md)。
 
 :::tip 被删除的字段
 在 `v2.5.0` 前，存在以下字段：

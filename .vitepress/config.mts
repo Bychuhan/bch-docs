@@ -38,7 +38,7 @@ export default defineConfig({
             {
               text: 'Phigros 官谱格式', link: '/learning/phi-chart',
               items: [
-                { text: 'blockAreaList', link: '/learning/phi-block' }
+                { text: '噪域', link: '/learning/phi-block' }
               ]
             },
             { text: 'Rizline 官谱格式', link: '/learning/riz-chart' }
